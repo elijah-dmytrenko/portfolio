@@ -21,8 +21,14 @@ export default function Home() {
                 Welcome to my website!
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl lg:max-w-none leading-relaxed">
-                This is my canvas where I share some of my projects and hobbies with the world. My projects are mostly related to the intersection of finance and technology. I'm always looking to improve and welcome any suggestions or feedback.
+                This is my canvas where you can learn about me and take a peak at what I've been up to. The website is structured into the following sections:
               </p>
+              <ul className="list-disc list-inside text-left space-y-2 mt-4">
+                <li><b>About</b> contains infromation about who I am and my background.</li>
+                <li><b>Projects</b> contains information about projects I have worked on.</li>
+                <li><b>Hobbies</b> is a miscellaneous section where I blog/journal about things that excite me.</li>
+                <li><b>Contact</b> is where you can find information on how to get in touch with me.</li>
+              </ul>  
             </div>
 
             {/* Right Side - Profile Image */}

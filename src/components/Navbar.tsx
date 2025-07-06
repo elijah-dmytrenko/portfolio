@@ -1,9 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="bg-white/80 backdrop-blur-md dark:bg-gray-900/80 fixed w-full z-50 top-0 border-b border-gray-200 dark:border-gray-700">
@@ -11,41 +14,57 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-              Homepage
-            </h1>
+            <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              Elijah Dmytrenko
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a
-                href="#home"
-                className="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              <Link
+                href="/"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  pathname === '/' 
+                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                }`}
               >
                 Home
-              </a>
-              <a
-                href="#about"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              </Link>
+              <Link
+                href="/about"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  pathname === '/about' 
+                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                }`}
               >
                 About
-              </a>
-              <a
-                href="#projects"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              </Link>
+              <Link
+                href="/projects"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  pathname === '/projects' 
+                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                }`}
               >
                 Projects
-              </a>
-              <a
-                href="#hobbies"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              </Link>
+              <Link
+                href="/hobbies"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  pathname === '/hobbies' 
+                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                }`}
               >
                 Hobbies
-              </a>              
+              </Link>              
               <a
                 href="#contact"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Contact
               </a>
@@ -88,27 +107,53 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700">
-              <a
-                href="#home"
-                className="text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+              <Link
+                href="/"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  pathname === '/' 
+                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Home
-              </a>
-              <a
-                href="#about"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+              </Link>
+              <Link
+                href="/about"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  pathname === '/about' 
+                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a>
-              <a
-                href="#projects"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+              </Link>
+              <Link
+                href="/projects"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  pathname === '/projects' 
+                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Projects
-              </a>
+              </Link>
+              <Link
+                href="/hobbies"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  pathname === '/hobbies' 
+                    ? 'text-indigo-600 dark:text-indigo-400' 
+                    : 'text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Hobbies
+              </Link>
               <a
                 href="#contact"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               >
                 Contact
               </a>

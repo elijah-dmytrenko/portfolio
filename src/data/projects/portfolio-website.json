@@ -1,0 +1,38 @@
+{
+  "slug": "portfolio-website",
+  "title": "Portfolio Website",
+  "date": "December 2024",
+  "description": "A modern, responsive portfolio website showcasing my work, experience, and interests. Built with cutting-edge web technologies and designed for optimal user experience.",
+  "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+  "overview": "This portfolio website represents my journey as a quantitative developer and showcases my passion for technology and finance. The project was born from a desire to create a modern, professional platform that reflects my skills and interests while providing an excellent user experience.\n\nThe website features a clean, minimalist design with smooth animations and full dark mode support. It's built using Next.js 15 with App Router, TypeScript for type safety, and Tailwind CSS for styling. The responsive design ensures it looks great on all devices, from mobile phones to large desktop screens.\n\nThe site includes several key sections: a welcoming homepage, detailed about page with my background and experience, a projects showcase, a hobbies section for personal interests, and contact information. Each section is designed to provide visitors with a comprehensive understanding of who I am and what I do.",
+  "technicalDetails": {
+    "frontend": [
+      { "name": "Next.js 15", "description": "App Router for modern React development" },
+      { "name": "TypeScript", "description": "Type safety and better developer experience" },
+      { "name": "Tailwind CSS", "description": "Utility-first CSS framework for rapid styling" },
+      { "name": "React 19", "description": "Latest React features and performance improvements" }
+    ],
+    "features": [
+      { "name": "Responsive Design", "description": "Mobile-first approach" },
+      { "name": "Dark Mode", "description": "Automatic theme switching" },
+      { "name": "Performance", "description": "Optimized loading and animations" },
+      { "name": "SEO Optimized", "description": "Meta tags and structured data" }
+    ]
+  },
+  "developmentProcess": [
+    { "title": "Planning & Design", "description": "Started with wireframes and design mockups to plan the layout and user experience. Focused on creating a clean, professional design that reflects my background in quantitative finance." },
+    { "title": "Development", "description": "Built the site using Next.js 15 with the new App Router. Implemented responsive design with Tailwind CSS and added TypeScript for better code quality and maintainability." },
+    { "title": "Testing & Optimization", "description": "Tested across different devices and browsers. Optimized performance with image optimization, code splitting, and efficient loading strategies." },
+    { "title": "Deployment", "description": "Deployed using Vercel for optimal performance and easy updates. Set up continuous deployment for seamless updates and maintenance." }
+  ],
+  "challenges": [
+    { "title": "Responsive Design", "description": "Creating a design that looks great on all screen sizes while maintaining the professional aesthetic.", "solution": "Used Tailwind CSS's responsive utilities and mobile-first approach. Tested extensively on various devices and screen sizes to ensure optimal experience." },
+    { "title": "Performance Optimization", "description": "Ensuring fast loading times while maintaining rich visual design and smooth animations.", "solution": "Implemented Next.js Image optimization, lazy loading, and efficient CSS with Tailwind's purge feature to minimize bundle size." }
+  ],
+  "futureEnhancements": {
+    "planned": ["Blog section for technical articles", "Interactive project demos", "Contact form integration", "Analytics and performance monitoring"],
+    "technical": ["PWA capabilities", "Advanced animations", "Content management system", "Multi-language support"]
+  },
+  "icon": "M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z",
+  "iconColor": "indigo"
+} 
