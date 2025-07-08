@@ -61,7 +61,7 @@ export default function Home() {
             </p>
             <p className="text-gray-700 text-base max-w-xl text-left lg:text-left">
               I built this website to learn more about front-end development as well as have a place to showcase things that interest me. 
-              I'm still learning and so if you have any feedback or wish to get in touch, please don't hesitate to get in touch.
+              I'm still learning and so if you have any feedback (or wish to get in touch for other reasons), please don't hesitate to reach out.
             </p>
           </div>
         </div>
