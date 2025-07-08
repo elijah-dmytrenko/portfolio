@@ -55,12 +55,12 @@ export default function Home() {
               <a href="/about" className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition">Resume</a>
               <a href="/projects" className="px-6 py-2 border-2 border-black text-black font-semibold rounded-full shadow hover:bg-gray-100 transition">Projects</a>
             </div>
-            <p className="text-gray-700 text-base max-w-xl mb-2 text-center lg:text-left">
+            <p className="text-gray-700 text-base max-w-xl mb-2 text-left lg:text-left">
               I'm a passionate quantitative developer with a deep interest in the intersection of finance and technology. 
               My work focuses on developing innovative solutions that bridge the gap between complex financial models and cutting-edge technology.
             </p>
-            <p className="text-gray-700 text-base max-w-xl text-center lg:text-left">
-              I built this website to learn more about front-end development as well as have a place to showcase what I have been up to. 
+            <p className="text-gray-700 text-base max-w-xl text-left lg:text-left">
+              I built this website to learn more about front-end development as well as have a place to showcase things that interest me. 
               I'm still learning and so if you have any feedback or wish to get in touch, please don't hesitate to get in touch.
             </p>
           </div>
