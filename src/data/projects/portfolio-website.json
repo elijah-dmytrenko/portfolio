@@ -1,0 +1,29 @@
+{
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "date": "July 2025",
+    "description": "A place to showcase some of my hobby projects as learn more about front-end development.",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Figma"],
+    "overview": "This is a temporary project created to test the appearance of new projects on the Projects page.\nFeel free to delete or modify this entry as needed.",
+    "technicalDetails": {
+      "frontend": [
+        { "name": "Next.js", "description": "React framework for server-side rendering." },
+        { "name": "TypeScript", "description": "Typed superset of JavaScript." }
+      ],
+      "features": [
+        { "name": "Temporary Entry", "description": "Demonstrates dynamic project loading." }
+      ]
+    },
+    "developmentProcess": [
+      { "title": "Creation", "description": "Added as a test project via automation." }
+    ],
+    "challenges": [
+      { "title": "None", "description": "No real challenges.", "solution": "N/A" }
+    ],
+    "futureEnhancements": {
+      "planned": ["Replace with real project"],
+      "technical": ["None"]
+    },
+    "icon": "M10 12a5 5 0 100-10 5 5 0 000 10zm-7 8a7 7 0 0114 0H3z",
+    "iconColor": "blue"
+  } 
