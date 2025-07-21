@@ -52,8 +52,7 @@ export default function MyStory() {
           Proper Engineer
         </p>
         <p>
-          In 2022, I was given the dream opportunity I could not turn down. 
-          I joined a Systematic Multi-Asset Research Team as an Engineer. 
+          In 2022, I was given the dream opportunity and I joined a Systematic Multi-Asset Research Team as an Engineer. 
           I also got to move away from Seattle and enjoy a sunny winter for once in beautiful San Francisco--cherry on top!
         </p>
         <br/>

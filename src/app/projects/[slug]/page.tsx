@@ -27,11 +27,11 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
       orange: 'bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300',
       red: 'bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-300'
     };
-    return colorMap[color] || colorMap.indigo;
+    return colorMap[color] || colorMap.blue;
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-10 via-indigo-25 to-indigo-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-blue-10 via-blue-25 to-blue-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 flex flex-col">
       <Navbar />
       <main className="flex-1 pt-20 px-4 pb-8">
         <div className="max-w-4xl mx-auto">
@@ -39,7 +39,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           <div className="mb-8">
             <Link
               href="/projects"
-              className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-colors"
+              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
             >
               <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
@@ -72,7 +72,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, index) => (
-                    <span key={index} className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-200 rounded-full text-sm font-medium">
+                    <span key={index} className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium">
                       {tech}
                     </span>
                   ))}
@@ -86,7 +86,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             {/* Overview Section */}
             <div className="bg-white/60 dark:bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Project Overview</h2>
-              <div className="prose prose-indigo dark:prose-invert max-w-none">
+              <div className="prose prose-blue dark:prose-invert max-w-none">
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed whitespace-pre-line">
                   {project.overview}
                 </p>
@@ -102,7 +102,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                     {project.technicalDetails.frontend.map((tech, index) => (
                       <li key={index} className="flex items-center">
-                        <span className="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>
+                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
                         <strong>{tech.name}:</strong> {tech.description}
                       </li>
                     ))}
@@ -113,7 +113,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                     {project.technicalDetails.features.map((feature, index) => (
                       <li key={index} className="flex items-center">
-                        <span className="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span>
+                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
                         <strong>{feature.name}:</strong> {feature.description}
                       </li>
                     ))}
@@ -127,7 +127,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Development Process</h2>
               <div className="space-y-6">
                 {project.developmentProcess.map((step, index) => (
-                  <div key={index} className="border-l-4 border-indigo-500 pl-6">
+                  <div key={index} className="border-l-4 border-blue-500 pl-6">
                     <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{step.title}</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       {step.description}
@@ -193,7 +193,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/projects"
-                className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
               >
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
@@ -202,7 +202,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
               </Link>
               <Link
                 href="/hobbies"
-                className="inline-flex items-center px-6 py-3 border border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white font-medium rounded-lg transition-colors"
+                className="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-medium rounded-lg transition-colors"
               >
                 Check Out Hobbies
                 <svg className="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
