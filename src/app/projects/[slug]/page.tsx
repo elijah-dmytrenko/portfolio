@@ -30,8 +30,8 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
     return colorMap[color] || colorMap.blue;
   };
 
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-10 via-blue-25 to-blue-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 flex flex-col">
+  return ( 
+    <div className="min-h-screen bg-gradient-to-b from-[white] to-[#E6DACE] dark:from-gray-500 dark:via-gray-600 dark:to-gray-800 flex flex-col">
       <Navbar />
       <main className="flex-1 pt-20 px-4 pb-8">
         <div className="max-w-4xl mx-auto">

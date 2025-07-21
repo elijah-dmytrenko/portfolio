@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useRef } from 'react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
@@ -36,12 +36,6 @@ export default function Navbar() {
           >
             Projects
           </Link>
-          <a
-            href="#contact"
-            className="uppercase text-sm font-medium tracking-wide text-gray-700 hover:text-blue-600 transition-colors"
-          >
-            Contact
-          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -77,20 +71,6 @@ export default function Navbar() {
           >
             Projects
           </Link>
-          <Link
-            href="/hobbies"
-            onClick={closeMenu}
-            className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${pathname === '/hobbies' ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'}`}
-          >
-            Hobbies
-          </Link>
-          <a
-            href="#contact"
-            onClick={closeMenu}
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors"
-          >
-            Contact
-          </a>
         </div>
       </div>
     </nav>

@@ -1,0 +1,29 @@
+{
+  "slug": "temp-project",
+  "title": "Temporary Project",
+  "date": "June 2024",
+  "description": "A temporary project for testing purposes.",
+  "technologies": ["Next.js", "React", "TypeScript"],
+  "overview": "This is a temporary project created to test the appearance of new projects on the Projects page.\nFeel free to delete or modify this entry as needed.",
+  "technicalDetails": {
+    "frontend": [
+      { "name": "Next.js", "description": "React framework for server-side rendering." },
+      { "name": "TypeScript", "description": "Typed superset of JavaScript." }
+    ],
+    "features": [
+      { "name": "Temporary Entry", "description": "Demonstrates dynamic project loading." }
+    ]
+  },
+  "developmentProcess": [
+    { "title": "Creation", "description": "Added as a test project via automation." }
+  ],
+  "challenges": [
+    { "title": "None", "description": "No real challenges.", "solution": "N/A" }
+  ],
+  "futureEnhancements": {
+    "planned": ["Replace with real project"],
+    "technical": ["None"]
+  },
+  "icon": "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z",
+  "iconColor": "blue"
+} 

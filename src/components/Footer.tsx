@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Right Side - Social Links */}
           <div className="flex space-x-6">
             <a
-              href="#"
+              href="https://gitlab.com/elijah.dmytrenko"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <span className="sr-only">GitLab</span>
@@ -32,7 +32,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/elijah-dmytrenko-b9bb60105/"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <span className="sr-only">LinkedIn</span>
@@ -41,7 +41,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href="mailto:elijah.dmytrenko@gmail.com"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <span className="sr-only">Email</span>
