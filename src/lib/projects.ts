@@ -1,5 +1,6 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
+import React from "react";
 
 export interface ProjectData {
   slug: string;
@@ -7,25 +8,21 @@ export interface ProjectData {
   date: string;
   description: string;
   technologies: string[];
-  overview: string;
-  technicalDetails: {
-    frontend: Array<{ name: string; description: string }>;
-    features: Array<{ name: string; description: string }>;
-  };
-  developmentProcess: Array<{ title: string; description: string }>;
-  challenges: Array<{ title: string; description: string; solution: string }>;
-  futureEnhancements: {
-    planned: string[];
-    technical: string[];
-  };
+  overview: React.ReactNode;
   icon: string;
   iconColor: string;
 }
 
 export function getProjectData(slug: string): ProjectData | null {
   try {
-    const filePath = path.join(process.cwd(), 'src', 'data', 'projects', `${slug}.json`);
-    const fileContents = fs.readFileSync(filePath, 'utf8');
+    const filePath = path.join(
+      process.cwd(),
+      "src",
+      "data",
+      "projects",
+      `${slug}.json`
+    );
+    const fileContents = fs.readFileSync(filePath, "utf8");
     return JSON.parse(fileContents) as ProjectData;
   } catch (error) {
     return null;
@@ -34,11 +31,11 @@ export function getProjectData(slug: string): ProjectData | null {
 
 export function getAllProjectSlugs(): string[] {
   try {
-    const projectsDir = path.join(process.cwd(), 'src', 'data', 'projects');
+    const projectsDir = path.join(process.cwd(), "src", "data", "projects");
     const files = fs.readdirSync(projectsDir);
     return files
-      .filter(file => file.endsWith('.json'))
-      .map(file => file.replace('.json', ''));
+      .filter((file) => file.endsWith(".json"))
+      .map((file) => file.replace(".json", ""));
   } catch (error) {
     return [];
   }
@@ -47,6 +44,6 @@ export function getAllProjectSlugs(): string[] {
 export function getAllProjects(): ProjectData[] {
   const slugs = getAllProjectSlugs();
   return slugs
-    .map(slug => getProjectData(slug))
+    .map((slug) => getProjectData(slug))
     .filter((project): project is ProjectData => project !== null);
-} 
+}

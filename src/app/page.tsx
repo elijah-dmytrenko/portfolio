@@ -20,7 +20,7 @@ export default function Home() {
             <div className="relative lg:absolute lg:left-[5%] lg:top-1/2 lg:-translate-y-1/2 z-10 w-80 max-w-full bg-[#F4ECE6] shadow-lg flex flex-col items-center overflow-hidden">
               {/* Main content area */}
               <div className="p-5 flex flex-col items-center flex-grow">
-                <div className="w-50 h-50 rounded-full overflow-hidden border-4 border-white shadow-md mb-4">
+                <div className="w-50 h-50 rounded-full overflow-hidden border-2 border-white shadow-md mb-4">
                   <Image
                     src="/images/profile.jpeg"
                     alt="Elijah Dmytrenko"
