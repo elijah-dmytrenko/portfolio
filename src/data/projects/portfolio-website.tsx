@@ -69,7 +69,7 @@ const project: ProjectData = {
         position correctly with an expanding/minimizing window. This was tricky but I found a way with the following
         Tailwind CSS:
       </p>
-      <pre className="ms-8 text-[12px]">
+      <pre className="ms-8 text-[12px] overflow-x-auto rounded bg-gray-100 p-2">
         <code>flex flex-1 items-center justify-center lg:justify-end relative</code>
       </pre>
       <ul className="list-disc marker:text-blue-600 hanging-indent ms-8 pl-4 text-[12px]">
@@ -101,7 +101,7 @@ const project: ProjectData = {
         completely with the header at the top, and then as you scroll down, move towards the beige colors on the
         homepage. Tailwind CSS made it super easy to do this.
       </p>
-      <pre className="ms-8 text-[12px]">
+      <pre className="ms-8 text-[12px] overflow-x-auto rounded bg-gray-100 p-2">
         <code>bg-gradient-to-b from-[white] to-[#E6DACE]</code>
       </pre>
       <ul className="list-disc marker:text-blue-600 hanging-indent ms-8 pl-4 text-[12px]">
@@ -130,7 +130,7 @@ const project: ProjectData = {
         experience to be consistent, I needed each project in the array to be defined in the same manner. For this, I
         created the following interface:
       </p>
-      <pre className="ms-8 text-[12px]">
+      <pre className="ms-8 text-[12px] overflow-x-auto rounded bg-gray-100 p-2">
         <code>
           {`export interface ProjectData {
   slug: string;
@@ -156,7 +156,7 @@ const project: ProjectData = {
         defined in our interface). I then needed to create an <i>async function</i> so that we could <i>await</i> the{" "}
         <i>params object</i>.
       </p>
-      <pre className="ms-8 text-[12px]">
+      <pre className="ms-8 text-[12px] overflow-x-auto rounded bg-gray-100 p-2">
         <code>
           {`export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
     let project: ProjectData | null = null;
