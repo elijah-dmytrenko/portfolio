@@ -158,13 +158,14 @@ const project: ProjectData = {
       </p>
       <pre className="ms-8 text-[12px]">
         <code>
-          {`export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
+          {`export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
     let project: ProjectData | null = null;
     try {
     // Dynamic import based on slug
     const { slug } = await params; 
     project = (await import(\`@/data/projects/\${slug}\`)).default;
     } catch (e) {
+    console.error("Project import failed:", e);
     notFound();
     }
     ...`}

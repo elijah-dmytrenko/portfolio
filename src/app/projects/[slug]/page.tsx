@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { ProjectData } from "@/app/projects/projects";
 import React from "react";
 
-export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
+export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   let project: ProjectData | null = null;
   try {
     // Dynamic import based on slug
