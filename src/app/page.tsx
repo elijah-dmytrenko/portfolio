@@ -77,7 +77,7 @@ export default function Home() {
           <div className="w-full lg:w-7/10 bg-transparent h-full flex flex-col justify-center items-center lg:items-start px-6 lg:px-12 py-12">
             <h1 className="text-6xl font-extrabold text-black mb-2">Hello</h1>
             <h2 className="text-2xl font-medium text-gray-800 mb-6 text-center lg:text-left">
-              Here's who I am & what I do
+              Here&apos;s who I am & what I do
             </h2>
             <div className="flex gap-4 mb-8">
               <Link
@@ -95,15 +95,15 @@ export default function Home() {
             </div>
             <div className="text-gray-700 text-base max-w-2xl max-auto mb-2 text-left lg:text-left">
               <p>
-                I'm a passionate quantitative developer with a deep interest in the intersection of finance and
+                I&apos;m a passionate quantitative developer with a deep interest in the intersection of finance and
                 technology. My work focuses on developing innovative solutions that bridge the gap between complex
                 financial models and cutting-edge technology.
               </p>
               <br />
               <p>
                 I built this website to learn more about front-end development as well as have a place to showcase
-                things that interest me. I'm still learning and so if you have any feedback (or wish to get in touch for
-                other reasons), please do reach out!
+                things that interest me. I&apos;m still learning and so if you have any feedback (or wish to get in
+                touch for other reasons), please do reach out!
               </p>
             </div>
           </div>
