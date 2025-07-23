@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MyStory from "./MyStory";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -13,12 +14,13 @@ export default function About() {
           <div className="bg-white/60 dark:bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 mb-8 mt-8 shadow-xl">
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
               <div className="flex-shrink-0">
-                <div className="relative w-48 h-48 lg:w-56 lg:h-56">
+                <div className="w-50 h-50 rounded-full overflow-hidden mt-4 border-2 border-[#f5f1ed] shadow-md">
                   <Image
-                    src="/images/profile.jpeg"
+                    src="/images/profile.webp"
                     alt="Elijah Dmytrenko"
-                    fill
-                    className="rounded-full object-cover border-2 border-white dark:border-gray-700 shadow-lg"
+                    width={250}
+                    height={250}
+                    className="object-cover w-full h-full"
                     priority
                   />
                 </div>
@@ -26,7 +28,7 @@ export default function About() {
               <div className="flex-1 text-center lg:text-left">
                 <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Elijah Dmytrenko</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  I'm a passionate quantitative developer with a deep interest in the intersection of finance and
+                  I&apos;m a passionate quantitative developer with a deep interest in the intersection of finance and
                   technology. My work focuses on developing innovative solutions that bridge the gap between complex
                   financial models and cutting-edge technology.
                 </p>
@@ -180,7 +182,7 @@ export default function About() {
                     />
                   </div>
                   <div>
-                    <p className="font-medium">Bachelor's in Economics</p>
+                    <p className="font-medium">Bachelor&apos;s in Economics</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">University of Washington (2015-2018)</p>
                   </div>
                 </li>
@@ -192,7 +194,7 @@ export default function About() {
           {/* Call to Action */}
           <div className="text-center mt-12">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/"
                 className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
               >
@@ -204,8 +206,8 @@ export default function About() {
                   />
                 </svg>
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/projects"
                 className="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-medium rounded-lg transition-colors"
               >
@@ -217,7 +219,7 @@ export default function About() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

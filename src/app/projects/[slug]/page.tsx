@@ -12,6 +12,7 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
     const { slug } = await params; // Not sure why I need to separate params instead of calling params.slug, but I will otherwise get an error
     project = (await import(`@/data/projects/${slug}`)).default;
   } catch (e) {
+    console.error("Project import failed:", e);
     notFound();
   }
 

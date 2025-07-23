@@ -25,17 +25,17 @@ export default function MyStory() {
         <p className="font-bold">Quant</p>
         <p>
           I knew I needed to change roles if I wanted to get closer to building the technology. Luckily for me, my
-          previous work was noticed (and I'd like to think admired) by those in power at the firm. So long-story short,
-          in 2020 I was given the opportunity to become a 'Quant'.
+          previous work was noticed (and I&apos;d like to think admired) by those in power at the firm. So long-story
+          short, in 2020 I was given the opportunity to become a &apos;Quant&apos;.
         </p>
         <br />
         <p>
-          As a Quant, I began to transition from a 'spaghetti-coder' to building smarter more effective tools and
-          programs. I was given a project to work on an <strong>MS SQL Server</strong> database--from which, I learned{" "}
-          <strong>SQL</strong>. I was also given a project to systematize more processes--from which, I decided to make
-          the switch from R and began learning <strong>Python</strong> (more was happening in the Python community and I
-          wanted to ride the bigger wave). I was writing smarter, learning about design patterns, managing environments,
-          object oriented programming, and more.
+          As a Quant, I began to transition from a &apos;spaghetti-coder&apos; to building smarter more effective tools
+          and programs. I was given a project to work on an <strong>MS SQL Server</strong> database--from which, I
+          learned <strong>SQL</strong>. I was also given a project to systematize more processes--from which, I decided
+          to make the switch from R and began learning <strong>Python</strong> (more was happening in the Python
+          community and I wanted to ride the bigger wave). I was writing smarter, learning about design patterns,
+          managing environments, object oriented programming, and more.
         </p>
         <br />
         <p>
@@ -56,7 +56,7 @@ export default function MyStory() {
         <br />
         <p>
           As a <strong>Research Engineer</strong>, my job was mainly to maintain and build the infrastructure that made
-          our business 'Systematic'. This required working with a lot of different technologies:
+          our business &apos;Systematic&apos;. This required working with a lot of different technologies:
         </p>
         <ul className="list-disc marker:text-blue-600 hanging-indent pl-5 mt-2">
           <li>
@@ -85,8 +85,8 @@ export default function MyStory() {
         <br />
         <p>
           To top it off, we were building something very exciting and still very new in the industry. We were building a
-          scalable, fully customizable multi-asset platform where clients could come and choose their 'alpha blocks'
-          (think legos) to fit their unique needs.
+          scalable, fully customizable multi-asset platform where clients could come and choose their &apos;alpha
+          blocks&apos; (think legos) to fit their unique needs.
         </p>
         <br />
         <p>
@@ -94,12 +94,12 @@ export default function MyStory() {
           firm did not include systematic (and therefore me).
         </p>
         <br />
-        <p className="font-bold">What's Next?</p>
+        <p className="font-bold">What&apos;s Next?</p>
         <p>
-          I'm not sure what exactly lies ahead. But I'm excited. Right now is one of the most exciting times in tech
-          with AI. Never before has a developer been so empowered to create and be productive. I'm reminded of the same
-          feeling of magic back when I first started coding in 2018. And just like back then, I'll be jumping into the
-          deep-end and conquering the power of AI (whatever that means).
+          I&apos;m not sure what exactly lies ahead. But I&apos;m excited. Right now is one of the most exciting times
+          in tech with AI. Never before has a developer been so empowered to create and be productive. I&apos;m reminded
+          of the same feeling of magic back when I first started coding in 2018. And just like back then, I&apos;ll be
+          jumping into the deep-end and conquering the power of AI (whatever that means).
         </p>
       </div>
     </div>

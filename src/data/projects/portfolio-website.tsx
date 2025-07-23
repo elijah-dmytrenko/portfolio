@@ -90,8 +90,8 @@ const project: ProjectData = {
         </li>
         <li>
           <b>relative</b> will set the card relative to the absolute position of the other children in the flex. This
-          was the key so that the card element didn't overlap with the text element on the right as well as was still
-          positioned correctly on smaller screens (centered above the text element).
+          was the key so that the card element didn&apos;t overlap with the text element on the right as well as was
+          still positioned correctly on smaller screens (centered above the text element).
         </li>
       </ul>
       <h4 className="my-3 text-1xl text-gray-800 dark:text-white ">Creating the About Page</h4>
@@ -179,8 +179,8 @@ const project: ProjectData = {
       <h3 className="my-3 text-2xl text-gray-800 dark:text-white ">Conclusion</h3>
       <p>
         This project was a lot of fun to make and checked off a major personal goal! While I still have a long way to go
-        in my front-development journey, I'm proud of how this turned out and look forward to adding to it and making it
-        even better!
+        in my front-development journey, I&apos;m proud of how this turned out and look forward to adding to it and
+        making it even better!
       </p>
     </>
   ),
