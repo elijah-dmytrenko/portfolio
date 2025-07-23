@@ -191,9 +191,6 @@ export default function About() {
           <MyStory />
           {/* Call to Action */}
           <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              Interested in learning more about what I've been building?
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/"
