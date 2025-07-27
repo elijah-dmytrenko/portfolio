@@ -10,18 +10,18 @@ export default function Navbar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className="bg-white w-full z-50 top-0 fixed">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+    <nav className="bg-white w-full z-50 top-0 fixed dark:bg-gray-500/80">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20 text-shadow-xs">
         {/* Logo/Brand */}
         <div className="flex items-center gap-2">
           <span className="inline-block w-3 h-3 bg-blue-600 mr-2"></span>
           <Link
             href="/"
-            className="text-xl lg:text-2xl font-extrabold text-black hover:text-blue-600 transition-colors"
+            className="text-xl lg:text-2xl font-extrabold text-black hover:text-blue-600 transition-colors dark:text-gray-200"
           >
             Elijah Dmytrenko
           </Link>
-          <span className="hidden sm:inline ml-2 text-sm text-gray-500 font-medium tracking-wide">
+          <span className="hidden sm:inline ml-2 text-sm text-gray-500 font-medium tracking-wide dark:text-gray-300">
             / QUANTITATIVE DEVELOPER
           </span>
         </div>
@@ -31,7 +31,7 @@ export default function Navbar() {
           <Link
             href="/about"
             className={`uppercase text-sm font-medium tracking-wide transition-colors ${
-              pathname === "/about" ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
+              pathname === "/about" ? "text-blue-600" : "text-gray-700 hover:text-blue-600 dark:text-gray-300"
             }`}
           >
             About
@@ -39,7 +39,7 @@ export default function Navbar() {
           <Link
             href="/projects"
             className={`uppercase text-sm font-medium tracking-wide transition-colors ${
-              pathname === "/projects" ? "text-blue-600" : "text-gray-700 hover:text-blue-600"
+              pathname === "/projects" ? "text-blue-600" : "text-gray-700 hover:text-blue-600 dark:text-gray-300"
             }`}
           >
             Projects

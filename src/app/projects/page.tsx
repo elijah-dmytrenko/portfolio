@@ -9,7 +9,7 @@ const projects: ProjectData[] = [portfolioWebsite];
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[white] to-[#E6DACE] dark:from-gray-500 dark:via-gray-600 dark:to-gray-800 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-[white] to-[#E6DACE] dark:from-gray-500 dark:via-gray-600 dark:to-gray-900 flex flex-col">
       <Navbar />
       <main className="flex-1 pt-20 px-4 pb-8">
         <div className="max-w-5xl mx-auto">

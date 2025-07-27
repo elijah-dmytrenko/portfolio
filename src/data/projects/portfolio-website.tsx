@@ -1,5 +1,7 @@
 import { ProjectData } from "@/app/projects/projects";
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const project: ProjectData = {
   slug: "portfolio-website",
@@ -69,8 +71,20 @@ const project: ProjectData = {
         position correctly with an expanding/minimizing window. This was tricky but I found a way with the following
         Tailwind CSS:
       </p>
-      <pre className="ms-8 text-[12px] overflow-x-auto rounded bg-gray-100 p-2">
-        <code>flex flex-1 items-center justify-center lg:justify-end relative</code>
+      <pre className="ms-8 overflow-x-auto rounded p-2 bg-gray-300">
+        <SyntaxHighlighter
+          language="typescript"
+          style={coy}
+          customStyle={{
+            background: "transparent",
+            backgroundColor: "transparent",
+            fontSize: 12,
+            margin: 0,
+            padding: 0,
+          }}
+        >
+          {`flex flex-1 items-center justify-center lg:justify-end relative`}
+        </SyntaxHighlighter>
       </pre>
       <ul className="list-disc marker:text-blue-600 hanging-indent ms-8 pl-4 text-[12px]">
         <li>
@@ -101,8 +115,20 @@ const project: ProjectData = {
         completely with the header at the top, and then as you scroll down, move towards the beige colors on the
         homepage. Tailwind CSS made it super easy to do this.
       </p>
-      <pre className="ms-8 text-[12px] overflow-x-auto rounded bg-gray-100 p-2">
-        <code>bg-gradient-to-b from-[white] to-[#E6DACE]</code>
+      <pre className="ms-8 overflow-x-auto rounded p-2 bg-gray-300">
+        <SyntaxHighlighter
+          language="typescript"
+          style={coy}
+          customStyle={{
+            background: "transparent",
+            backgroundColor: "transparent",
+            fontSize: 12,
+            margin: 0,
+            padding: 0,
+          }}
+        >
+          {`bg-gradient-to-b from-[white] to-[#E6DACE]`}
+        </SyntaxHighlighter>
       </pre>
       <ul className="list-disc marker:text-blue-600 hanging-indent ms-8 pl-4 text-[12px]">
         <li>
@@ -130,19 +156,29 @@ const project: ProjectData = {
         experience to be consistent, I needed each project in the array to be defined in the same manner. For this, I
         created the following interface:
       </p>
-      <pre className="ms-8 text-[12px] overflow-x-auto rounded bg-gray-100 p-2">
-        <code>
+      <pre className="ms-8 overflow-x-auto rounded p-2 bg-gray-300">
+        <SyntaxHighlighter
+          language="typescript"
+          style={coy}
+          customStyle={{
+            background: "transparent",
+            backgroundColor: "transparent",
+            fontSize: 12,
+            margin: 0,
+            padding: 0,
+          }}
+        >
           {`export interface ProjectData {
-  slug: string;
-  title: string;
-  date: string;
-  description: string;
-  technologies: string[];
-  overview: React.ReactNode;
-  icon: string;
-  iconColor: string;
-}`}
-        </code>
+    slug: string;
+    title: string;
+    date: string;
+    description: string;
+    technologies: string[];
+    overview: React.ReactNode;
+    icon: string;
+    iconColor: string;
+  }`}
+        </SyntaxHighlighter>
       </pre>
       <p>
         The <i>slug, title, date, description, technologies, icon and iconColor</i> would all be strings used to create
@@ -156,20 +192,32 @@ const project: ProjectData = {
         defined in our interface). I then needed to create an <i>async function</i> so that we could <i>await</i> the{" "}
         <i>params object</i>.
       </p>
-      <pre className="ms-8 text-[12px] overflow-x-auto rounded bg-gray-100 p-2">
-        <code>
+      <pre className="ms-8 overflow-x-auto rounded p-2 bg-gray-300">
+        <SyntaxHighlighter
+          language="typescript"
+          style={coy}
+          customStyle={{
+            background: "transparent",
+            backgroundColor: "transparent",
+            fontSize: 12,
+            margin: 0,
+            padding: 0,
+          }}
+        >
           {`export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-    let project: ProjectData | null = null;
-    try {
+  let project: ProjectData | null = null;
+  try {
     // Dynamic import based on slug
     const { slug } = await params; 
-    project = (await import(\`@/data/projects/\${slug}\`)).default;
-    } catch (e) {
+    project = (await import(
+      \`@/data/projects/\${slug}\`
+    )).default;
+  } catch (e) {
     console.error("Project import failed:", e);
     notFound();
-    }
-    ...`}
-        </code>
+  }
+  ...`}
+        </SyntaxHighlighter>
       </pre>
       <p>
         The <i>await</i> keyword waits for the <i>params</i> to resolve before rendering the page--<i>params</i> gets
