@@ -19,7 +19,7 @@ export default function MyStory() {
           Building what ended up being such powerful scripts for our team felt like magic and I was immediately hooked.
           I was so excited to learn about programming as knew I was just scratching the surface of what technology could
           do. So energized by this excitement (and a lot of naivety), I jumped into the deep-end and set out to conquer
-          programming (whatever that meant).
+          programming (had no idea what that even meant at the time).
         </p>
         <br />
         <p className="font-bold">Quant</p>
@@ -55,51 +55,47 @@ export default function MyStory() {
         </p>
         <br />
         <p>
-          As a <strong>Research Engineer</strong>, my job was mainly to maintain and build the infrastructure that made
-          our business &apos;Systematic&apos;. This required working with a lot of different technologies:
-        </p>
-        <ul className="list-disc marker:text-blue-600 hanging-indent pl-5 mt-2">
-          <li>
-            I got to work with many different database technologies (
-            <strong>SQL Server, ClickHouse, Mongo, ArcticDb</strong>) and was responsible for designing various schemas.
-            From which I learned about compressing, normalizing, and serializing.
-          </li>
-          <li>
-            I got to work on designing <strong>APIs</strong> to put an engine behind an idea (
-            <strong>Python, Matlab, R</strong>). From which I continued to learn how to write better code (
-            <strong>linting, testing, versioning</strong>).
-          </li>
-          <li>
-            I got to build interactive dashboards to bring to life our ideas and their required monitoring for the PMs
-            and trading teams (<strong>Streamlit, JS, CSS, HTML</strong>). From which I learned about front-end
-            development and the client-server relationship.
-          </li>
-          <li>
-            And with all of this, I got to build out orchestration and manage environments to support everything. I
-            learned about about <strong>Windows, Linux, Docker, Docker-Compose, CI/CD</strong>, and much more.
-          </li>
-        </ul>
-        <p>
-          In this role, everything clicked and I became a <strong>full-stack engineer</strong>.
+          As a <strong>Research Engineer</strong> on a systematic multi-asset platform, my mandate was to build the
+          technology that made the investment process systematic — end to end. That meant owning a broad surface area:
+          from the data pipelines that fed our models, to the quantitative tooling the research team built on top of, to
+          the PM-facing applications that turned research into daily decisions for portfolio managers and traders.
         </p>
         <br />
         <p>
-          To top it off, we were building something very exciting and still very new in the industry. We were building a
-          scalable, fully customizable multi-asset platform where clients could come and choose their &apos;alpha
-          blocks&apos; (think legos) to fit their unique needs.
+          Working at the intersection of <strong>quantitative finance and software engineering</strong> meant that no
+          two problems looked alike. One day I might be designing a database schema to efficiently store and retrieve
+          time-series data at scale; the next, building a production-ready Python library to standardize how the team
+          constructed signals and ran analytics; the next after that, crafting a front-end application that gave
+          portfolio managers a live window into their risk and performance.
         </p>
         <br />
         <p>
-          But in early 2025, there was a major change in the leadership at our boutique and the new direction of the
-          firm did not include systematic (and therefore me).
+          What made this role transformative was the breadth. I had to become fluent across the entire stack —{" "}
+          <strong>data engineering, backend services, and front-end development</strong> — while staying grounded in the
+          domain logic of what the investment team actually needed. In this role, everything clicked and I became a{" "}
+          <strong>full-stack engineer</strong>.
         </p>
         <br />
-        <p className="font-bold">What&apos;s Next?</p>
+        <p className="font-bold">What&apos;s Next</p>
         <p>
-          I&apos;m not sure what exactly lies ahead. But I&apos;m excited. Right now is one of the most exciting times
-          in tech with AI. Never before has a developer been so empowered to create and be productive. I&apos;m reminded
-          of the same feeling of magic back when I first started coding in 2018. And just like back then, I&apos;ll be
-          jumping into the deep-end and conquering the power of AI (whatever that means).
+          If the beginning of my story was about discovering that programming felt like magic, then{" "}
+          <strong>AI</strong> feels like finding out the magic wand is real. What used to take weeks of careful
+          engineering — data wrangling, model iteration, building interfaces — can now be prototyped in hours. It&apos;s
+          the most exciting technology shift I&apos;ve witnessed in my career, and I don&apos;t think we&apos;re close
+          to grasping its full impact yet.
+        </p>
+        <br />
+        <p>
+          But what excites me most isn&apos;t just the speed. It&apos;s the potential. If developed thoughtfully and
+          safely, AI has the ability to fundamentally transform the way we work — compressing the gap between having an
+          idea and seeing it realized. For a field like systematic investing, where the bottleneck has always been the
+          time it takes to translate research insight into working technology, that shift is enormous.
+        </p>
+        <br />
+        <p>
+          And beyond work, I think about the world we&apos;re building and eventually handing off. Done right, this
+          technology can give more people access to better tools, better decisions, and better outcomes. That&apos;s
+          worth being excited about — and working hard to get right.
         </p>
       </div>
     </div>
