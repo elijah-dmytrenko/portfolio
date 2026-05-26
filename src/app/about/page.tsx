@@ -97,7 +97,7 @@ export default function About() {
                   </div>
                   <div>
                     <p className="font-medium">Research Engineer</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">January 2022-June 2025</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">January 2022-Present</p>
                   </div>
                 </li>
                 <li className="flex items-center">
